@@ -1,0 +1,62 @@
+{
+
+	comment : [
+		"type : linear : linear borders in X-direction",
+		"type : curved : curved borders in X-direction",
+		"type : point : block end in a single point.",
+		"anchor: X, Y, Z : lower left of block. L : length of block in X-direction. Y1 : upper left y of block",
+	],
+	blocks : [
+		{
+			type : linear,
+			foil : normal,
+			block-a0 : {X : 0.0, Y : 10, Z : 0.0},
+			block-a1 : {X : 0.0, Y : 150, Z : 0.0},
+			z-scale : 1.0,
+		},
+		{
+			type : linear,
+			foil : normal,
+			block-a0 : {X : 250.0, Y : 15, Z : 0.0},
+			block-a1 : {X : 250.0, Y : 130, Z : 0.0},
+			z-scale : 1.2,
+		},
+		{
+			type : linear,
+			foil : normal,
+			block-a0 : {X : 490.0, Y : 29, Z : 0.0},
+			block-a1 : {X : 490.0, Y : 112, Z : 0.0},
+			z-scale : 1.2,
+		},
+		{
+			type : linear,
+			foil : normal,
+			block-a0 : {X : 500.0, Y : 30, Z : 0.0},
+			block-a1 : {X : 500.0, Y : 110, Z : 0.0},
+			z-scale : 1.2,
+		},
+		{
+			type : curved,
+			foil : normal,
+			block-a0 : {X : 520.0, Y : 35, Z : 0.0},
+			block-a1 : {X : 520.0, Y : 70, Z : 0.0},
+			z-scale : 1.2,
+		},
+		{
+			type : curved,
+			foil : normal,
+			block-a0 : {X : 530.0, Y : 40, Z : 0.0},
+			block-a1 : {X : 530.0, Y : 40, Z : 0.0},
+			z-scale : 1.2,
+		},
+		{
+			type : point,
+			foil : normal,
+			block-a0 : {X : 535.0, Y : 45, Z : 0.0},
+			block-a1 : {X : 535.0, Y : 45, Z : 0.0},
+			z-scale : 1.2,
+		},
+	]
+	
+	
+}
