@@ -41,40 +41,5 @@ public class Value {
 	public boolean isNull() {
 		return mValue == 0.0;
 	}
-
-
-	public Value minus(Value y) {
-		return new Value(mValue - y.getNative());
-	}
-
-
-	public Value div(Value value) {
-		return new Value(mValue/value.getNative());
-	}
-
-
-	public Value mul(Value x) {
-		return new Value(mValue*x.getNative());
-	}
-
-
-	public Value sqr() {
-		return new Value(mValue*mValue);
-	}
 	
-	public Value sqrt() {
-		return new Value(Math.sqrt(mValue));
-	}
-	
-	public boolean greater(Value n) {
-		return mValue > n.getNative();
-	}
-	
-	public boolean less(Value n) {
-		return mValue < n.getNative();
-	}
-	
-	public Value abs() {
-		return new Value(Math.abs(mValue));
-	}
 }

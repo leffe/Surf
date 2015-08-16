@@ -21,25 +21,12 @@ public class Value2D {
 		mY = y;
 	}
 	
-	public Value2D() {
-		mX = new Value("0.0");
-		mY = new Value("0.0");
-	}
-
 	public Value getX() {
 		return mX;
 	}
 
-	public Value getAbsX() {
-		return new Value(Math.abs(mX.getNative()));
-	}
-
 	public Value getY() {
 		return mY;
-	}
-	
-	public Value getAbsY() {
-		return new Value(Math.abs(mY.getNative()));
 	}
 	
 	@Override
