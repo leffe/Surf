@@ -6,7 +6,9 @@ import com.helisim.assembly.points.Value2D;
 public interface Line {
 	public Value2D getStart();
 	public Value2D getEnd();
-	public Value2D getY(Value x);
+	public Value getY(Value x);
 	public Value2D getNext(Value2D current, Value dist);
+	
+	public Value getDerived();
 }
 

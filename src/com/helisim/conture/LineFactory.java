@@ -63,8 +63,8 @@ public class LineFactory {
 		}
 
 		@Override
-		public Value2D getY(Value x) {
-			return new Value2D(x, mk.mul(x).add(mm));
+		public Value getY(Value x) {
+			return mk.mul(x).add(mm);
 		}
 
 		@Override
@@ -82,7 +82,7 @@ public class LineFactory {
 				newX = current.getX().minus((dist.mul(mSinAlpha)).div(mk));
 			}
 			if (inBounds(newX)) {
-				return new Value2D(newX, getY(newX).getY());
+				return new Value2D(newX, getY(newX));
 			}
 			return null;
 		}
@@ -93,6 +93,11 @@ public class LineFactory {
 				return true;
 			}
 			return false;
+		}
+
+		@Override
+		public Value getDerived() {
+			return mk;
 		}
 
 	}
@@ -134,8 +139,8 @@ public class LineFactory {
 		}
 
 		@Override
-		public Value2D getY(Value x) {
-			return new Value2D(x, mk.mul(x).add(mm));
+		public Value getY(Value x) {
+			return mk.mul(x).add(mm);
 		}
 
 		private Value2D getX(Value y) {
@@ -168,6 +173,11 @@ public class LineFactory {
 				return true;
 			}
 			return false;
+		}
+
+		@Override
+		public Value getDerived() {
+			return mk;
 		}
 
 	}
